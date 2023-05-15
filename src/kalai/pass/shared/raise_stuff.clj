@@ -124,5 +124,3 @@
     ;;~(throw (ex-info "Raise namespace" {:else ?else}))
     ?else
     ))
-
-

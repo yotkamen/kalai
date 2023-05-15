@@ -57,7 +57,6 @@
 
     ;;;; empty collections don't need a tmp variable (with new local block, etc.)
     (m/and (m/or [] {} #{})
-           (m/pred empty?)
            (m/app (comp :t meta) ?t))
     ;;->
     (j/new ?t)
